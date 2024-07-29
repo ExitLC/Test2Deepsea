@@ -1581,3 +1581,63 @@ button {
     transition: 0.7s;
   }
 
+  @media only screen and (max-width: 375px) {
+    .gender, .age, .status, .degree, .fos {
+      top: 30%;
+    }
+    .page3DSP_V, .page4DSP_V {
+      top: 25%;
+    }
+    .page1DSP_V .content h1 {
+      font-size: 15px;
+    }
+    .page1DSP_V .content span {
+      font-size: 12px;
+    }
+    .page5DSP_V .content h1 {
+      font-size: 15px;
+    }
+    .page5DSP_V .content span {
+      font-size: 12px;
+    }
+    .image {
+      position:absolute;
+      top:0;
+      right:0;
+      padding-top: 1.2rem;
+      padding-right: 1rem;
+   }
+   .OptionSelect{
+    top: 46.5%;
+  }
+  .OptionSelect_p2{
+    top: 60%;
+  }
+  .check_quest span {
+    padding: 9px;
+    width: 350px;
+  }
+  .check_quest p {
+    padding-bottom: 8px;
+  }
+  .OptionSelect_p5{
+    top: 45%;
+  }
+  .check_quest_p5 span {
+    padding: 9px;
+    width: 350px;
+  }
+  .check_quest_p5 p {
+    padding-bottom: 5px;
+  }
+  .next-button-pageDSP {
+    bottom:3%;
+  }
+  .back-button-pageDSP {
+    bottom:3%;
+  }
+  .inputSelect .radio-input,.inputSelect .radio-input-degree, .inputSelect .radio-input-fos {
+    top: 52%;
+  } 
+}
+

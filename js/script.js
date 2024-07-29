@@ -7,7 +7,7 @@ const setEmail = () => {
 
   if (isValidate) {
     localStorage.setItem('email', document.getElementById('txtEmail').value);
-    location.replace("infoPage/2_Age.html");
+    location.replace("2_Age.html");
   } else {
     localStorage.setItem('email', '');
   }
@@ -47,7 +47,7 @@ const setAge = () => {
 
 const goBack = () => {
   window.history.back();
-  location.replace("index.html");
+  location.replace("1_Home.html");
 };
 
 //*Gender*//
@@ -276,7 +276,7 @@ function saveSelectionPage2() {
 
   const goBackPageDSP3 = () => {
     window.history.back();
-    location.replace("../VisitorPage/4_Page3.html");
+    location.replace("../VisitorPage/3_Page2.html");
   };
 
     // Page4
@@ -634,8 +634,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
   const checkboxes_S1 = document.querySelectorAll('#page1Options_S input[type="checkbox"]');
   
   // Load saved selections from local storage
-  const savedSelections_S = JSON.parse(localStorage.getItem('selectedOptions_S1')) || [];
-  savedSelections_S.forEach(option => {
+  const savedSelections_S1 = JSON.parse(localStorage.getItem('selectedOptions_S1')) || [];
+  savedSelections_S1.forEach(option => {
       const checkbox_S1 = document.querySelector(`input[value="${option}"]`);
       if (checkbox_S1) {
         checkbox_S1.checked = true;
